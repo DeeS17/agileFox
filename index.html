@@ -63,37 +63,37 @@
 
             <img src="before footer.jpg" />
 
-            <form action="index.html">
+            <form action="thanks.html"">
                 Email:
-                <input type="email" name="email">
+                <input type="email" name="email" required>
                 </br>
                 </br>
                 Telephone:
-                <input type="tel" name="phone" pattern="[0-9]{10,}">
+                <input type="tel" name="phone" pattern="[0-9]{10,}" required>
                 </br>
                 </br>
                 Full name:
-                <input type="text" name="full name" />
+                <input type="text" name="full name" required/>
                 </br>
                 </br>
                 Gender:
-                <input type="radio" name="Gender" value="Male" /> Male
-                <input type="radio" name="Gender" value="Female" /> Female
+                <input type="radio" name="Gender" value="Male" required/> Male
+                <input type="radio" name="Gender" value="Female" required/> Female
                 </br>
                 </br>
                 Birthday:
-                <input type="date" id="birthday" name="birthday">
+                <input type="date" id="birthday" name="birthday" required/>
                 </br>
                 </br>
                 Do you ever have a pet?
-                <select name="experience">
+                <select name="experience" required>
                     <option>off course yes!</option>
                     <option>nope, but always first time for everything.</option>
                 </select>
                 <p>What kind of pet do you have?</p>
                 <input type="checkbox" name="dog" /> Dog
-                <input type="checkbox" name="cat" /> Cat
-                <input type="checkbox" name="other" /> Other
+                <input type="checkbox" name="cat"/> Cat
+                <input type="checkbox" name="other"/> Other
                 </br>
                 </br>
                 <input style="width: 100px" type="image" src="pawSubmit.jpg" alt="Submit">
