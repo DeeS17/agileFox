@@ -1,11 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jakarta Stray Animal Shelter</title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <header>
+        <table>
+            <tr>
+                <td rowspan="2"><img src="paw.jpg" /></td>
+                <td style="border-bottom: 4px solid white">JSAS</td>
+            </tr>
+            <tr>
+                <td>Jakarta Stray Animal Shelter</td>
+            </tr>
+        </table>
+        <ul>
+            <li><a href="#About-Us">About Us</a></li>
+            <li><a href="#Our-Service">Our Service</a></li>
+            <li><a href="#Contact_us">Contact Us</a></li>
+        </ul>
+    </header>
+
+
+    <section class="picture-after-header">
+        <h1 style="padding-left: 30px;">Adopt, don't buy</h1>
+    </section>
+
+    <section>
+        <div id="About-Us">
+            <h3>Who we are?</h3>
+            <p>We are a community who have an interest in caring stray domestic animal in Jakarta.</p>
+        </div>
+
+        <div id="Our-Service">
+            <h3>What we do?</h3>
+            <table>
+                <tr class="service-img">
+                    <td><img src="collect.jpg" style="position:relative; top: 50px" /></td>
+                    <td><img src="adopt.jpg" /</td>
+                    <td style="display:flex; justify-content: center;"><img src="donate.png" style="width: 200px; position: relative; top: 60px" /</td>
+                </tr>
+                <tr class="service-title">
+                    <td>Collect</td>
+                    <td>Adoption</td>
+                    <td>Social Movement</td>
+                </tr>
+                <tr class="service-desc">
+                    <td>we try our best to keep safe stray animal in Jakarta.</td>
+                    <td>We do try to find people, who want to adopt this animal.</td>
+                    <td>Off course we can't do it alone, we accept helping hands as a donation or volunteer. We accept every kind of your help to make this animal live well.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="border-bottom: none" id="Contact_us">
+            <h3>How do you reach us?</h3>
+            <p>If you are interest in our activity and want to support us with adoption, donation, or as a volunteer. You can fill this form below and we will contact you soon! </p>
+
+            <br />
+
+            <img src="before footer.jpg" />
+
+            <form action="thanks.html"">
+                Email:
+                <input type="email" name="email" required>
+                </br>
+                </br>
+                Telephone:
+                <input type="tel" name="phone" pattern="[0-9]{10,}" required>
+                </br>
+                </br>
+                Full name:
+                <input type="text" name="full name" required/>
+                </br>
+                </br>
+                Gender:
+                <input type="radio" name="Gender" value="Male" required/> Male
+                <input type="radio" name="Gender" value="Female" required/> Female
+                </br>
+                </br>
+                Birthday:
+                <input type="date" id="birthday" name="birthday" required/>
+                </br>
+                </br>
+                Do you ever have a pet?
+                <select name="experience" required>
+                    <option>off course yes!</option>
+                    <option>nope, but always first time for everything.</option>
+                </select>
+                <p>What kind of pet do you have?</p>
+                <input type="checkbox" name="dog" /> Dog
+                <input type="checkbox" name="cat"/> Cat
+                <input type="checkbox" name="other"/> Other
+                </br>
+                </br>
+                <input style="width: 100px" type="image" src="pawSubmit.jpg" alt="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <h1>Adopt don't buy</h1>
+    </footer>
+
 </body>
 </html>
