@@ -1,110 +1,59 @@
-﻿body{
+body{
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+    display: block;
+    /* align-items: flex-start; */
+    overflow:scroll;
     margin: 0;
-    padding: 0;
-    font-family:'Comic Sans MS'
+    font-family: monospace;
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-    background-color: gold;
-    position: fixed;
+    text-align: center;
+    background-color: lightseagreen;
+    color: seashell;
+    padding: 15px;
     width: 100%;
-    z-index: 10;
 }
 
-header img{
-    padding: 5px;
-    width: 100px;
-    background-color: gold;
+img {
+    width: 300px;
 }
 
-header table td {
-    font-weight:700;
+#landing {
+    margin-top: 70px;
 }
 
-header ul {
-    margin-right: 20px;
-    align-items:center;
+div{
+    text-align: center;
 }
 
-header ul li {
+div img{
+    width: 450px;
+}
+
+table {
     display: inline-block;
-    padding: 20px;
-    font-weight: 700;
-    border-bottom: 4px solid white;
+    background-color: white;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+#main-page{
+    display: none;
 }
 
-a:hover {
+.red-white {
     color: white;
-}
-
-.picture-after-header {
-    background-image: url("after header.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    height: 497px;
-    align-content: center;
-    color: white;
-    font-size: 5em;
-}
-
-section {
-    position: relative;
-    top: 150px;
-    padding: 20px;
-    display: grid;
-    justify-content: center;
-}
-
-div {
-    border-bottom: 4px solid gold;
-}
-
-#Our-Service td {
-    padding: 20px;
-    width: 200px;
-}
-
-table .service-title {
-    font-weight: 700;
-    text-align: center;
-}
-
-table .service-desc {
-    text-align: center;
-}
-
-#Contact_us {
-    display: grid
-}
-
-#Contact_us img {
-    justify-self:center;
-}
-
-form {
-    font-weight: 700;
-    padding: 20px;
-    width: 500px;
-    justify-self: center;
-    border: 5px solid gold;
+    background-color: red;
 }
 
 footer {
-    background-color: gold;
-    position: relative;
-    top:450px;
-    display:grid;
-}
-
-footer h1 {
-    text-align:center
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background-color: lightseagreen;
+    color: seashell;
+    text-align: center;
+    width: 100%;
 }
